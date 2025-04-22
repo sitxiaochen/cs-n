@@ -1,0 +1,5 @@
+aiohttp
+pandas
+plotly
+seaborn
+streamlit
