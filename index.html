@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO 饰品数据</title>
+</head>
+<body>
+    <h1>最新饰品价格和数量</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>饰品名称</th>
+                <th>最低价格 (¥)</th>
+                <th>在售数量</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
